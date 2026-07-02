@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DANGE CHAT HOUSE</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            scroll-behavior: smooth;
+        }
+
+        
+         nav{
+    position: absolute;   /* image वर येईल */
+    top: 0;
+    left: 0;
+    width: 100%;
+     box-sizing: border-box; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    z-index: 1000;
+}
+
+nav b{
+    color: orange;
+    font-size: 30px;
+}
+
+        nav a {
+            color:yellow;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            color: yellow;
+        }
+
+        
+        section {
+            padding: 80px 20px;
+        }
+
+        /* HOME SECTION */
+        #home {
+            height: 100vh;
+            background: url("chatimage.png") no-repeat center;
+            background-size: cover;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        #home h1 {
+            font-size: 50px;
+            
+            padding: 10px;
+        }
+
+        /* MENU BOX */
+        .menu-box {
+            display: flex;
+            gap: 20px;
+        }
+
+        .item {
+            border: 1px solid gray;
+            padding: 10px;
+            width: 150px;
+        }
+
+        /* FEEDBACK */
+        input, textarea {
+            width: 300px;
+            padding: 10px;
+            margin: 5px 0;
+        }
+
+        button {
+            padding: 10px;
+            background: black;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        
+        #about{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 60px;
+}
+
+.about-img{
+    flex: 1;
+}
+
+.about-img img{
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+     padding-left: 200px;
+}
+
+
+.about-text h1{
+    display: block;
+}
+
+.about-text p{
+    display: block;
+    margin-top: 15px;
+}
+
+.about-text h1{
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+.about-text p{
+    margin-top: 0;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+
+
+#feedback{
+    text-align: center;
+    padding: 50px;
+}
+
+#feedback form{
+    display: inline-block;
+}
+#contact{
+    text-align: center;
+    padding: 60px;
+    background-color: #f8f8f8;
+}
+
+#contact h1{
+    color: orangered;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+#contact p{
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+#menu{
+    text-align:center;
+    padding:60px;
+}
+
+.menu-item{
+    display:inline-block;
+    width:250px;
+    margin:20px;
+}
+
+.menu-item img{
+    width:220px;
+    height:180px;
+    border-radius:10px;
+}
+
+.menu-item h3{
+    margin:10px 0;
+}
+
+.menu-item p{
+    color:red;
+    font-weight:bold;
+}
+
+#feedback{
+    text-align: center;
+    padding: 50px;
+}
+
+#feedback input,
+#feedback textarea{
+    width: 300px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+#feedback textarea{
+    height: 100px;
+}
+
+#feedback button{
+    width: 120px;
+    padding: 10px;
+    background: orange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#feedback button:hover{
+    background: orangered;
+}
+    </style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+    <div><b>DANGE CHAT HOUSE</b></div>
+
+    <div>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+         <a href="#feedback">Feedback</a>
+        <a href="#contact">Contact</a>
+       
+        
+    </div>
+</nav>
+
+<!-- HOME -->
+<section id="home">
+    <!-- <h1>Welcome to<br>
+         Dange Chat House</h1>
+    <p>Best Street Food in Pune</p> -->
+</section>
+
+<!-- ABOUT -->
+
+<section id="about">
+
+    <div class="about-text">
+        <h1>About Us</h1>
+
+        <p>
+            We serve fresh, tasty and hygienic street food since many years.
+        </p>
+    </div>
+
+    <div class="about-img">
+        <img src="about.png" alt="About Image">
+    </div>
+
+</section>
+
+<!-- MENU -->
+<!-- <section id="menu">
+    <h1>Our Menu</h1>
+
+    <!-- <div class="menu-box">
+        <div class="item">Pani Puri</div>
+        <div class="item">Bhel Puri</div>
+        <div class="item">Sev Puri</div>
+        <div class="item">Dahi Puri</div>
+    </div> -->
+<!-- </section> --> -->
+<section id="menu">
+
+    <h1>Our Menu</h1>
+
+    <div class="menu-item">
+        <img src="panipuri.jfif" alt="Pani Puri">
+        <h3>Pani Puri</h3>
+        <p>₹30 / Plate</p>
+    </div>
+
+    <div class="menu-item">
+        <img src="bhel.jfif" alt="Bhel Puri">
+        <h3>Bhel Puri</h3>
+        <p>₹40 / Plate</p>
+    </div>
+    <div class="menu-item">
+        <img src="panipuri.jfif" alt="Pani Puri">
+        <h3>Pani Puri</h3>
+        <p>₹30 / Plate</p>
+    </div>
+
+    <div class="menu-item">
+        <img src="bhel.jfif" alt="Bhel Puri">
+        <h3>Bhel Puri</h3>
+        <p>₹40 / Plate</p>
+
+  
+    
+
+</section>
+
+<section id="feedback">
+    <h1>Feedback Form</h1>
+
+    <input type="text" id="name" placeholder="Enter Name"><br>
+    <textarea id="msg" placeholder="Your Feedback"></textarea><br>
+
+    <button onclick="submitFeedback()">Submit</button>
+
+    <p id="result"></p>
+</section>
+
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+    <h1>Contact Us</h1>
+
+    <p><strong>DANGE CHAT HOUSE</strong></p>
+
+    <p>📍 Address: Your Address, Pune, Maharashtra</p>
+
+    <p>📞 Mobile: +91 98765 43210</p>
+
+    <p>✉ Email: dangechathouse@gmail.com</p>
+
+    <p>🕒 Timing: 10:00 AM - 10:00 PM</p>
+
+</section>
+
+<!-- FEEDBACK -->
+
+
+
+<script>
+    function submitFeedback() {
+        let name = document.getElementById("name").value;
+        document.getElementById("result").innerText =
+            "Thank you " + name + " for your feedback!";
+    }
+</script>
+
+</body>
+</html>
